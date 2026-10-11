@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeSprint | Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="#">Type<span>Sprint</span></a>
+        <p>Practice. Improve. Repeat.</p>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <p class="tag">YOUR PERSONAL TYPING STUDIO</p>
+            <h1>Find your <span>flow.</span></h1>
+            <p>Challenge yourself and become a faster typist.</p>
+        </section>
+
+        <section class="card">
+            <div class="card-heading">
+                <div>
+                    <p class="tag">TYPING TEST</p>
+                    <h2>Ready, set, type.</h2>
+                </div>
+                <div class="durations">
+                    <button class="duration active" data-time="30">30 sec</button>
+                    <button class="duration" data-time="60">60 sec</button>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <p>TIME LEFT</p>
+                    <h2 id="time">30s</h2>
+                </div>
+                <div class="stat">
+                    <p>SPEED</p>
+                    <h2><span id="wpm">0</span> <small>WPM</small></h2>
+                </div>
+                <div class="stat">
+                    <p>ACCURACY</p>
+                    <h2><span id="accuracy">100</span>%</h2>
+                </div>
+                <div class="stat">
+                    <p>PERSONAL BEST</p>
+                    <h2><span id="best">0</span> <small>WPM</small></h2>
+                </div>
+            </div>
+
+            <div class="progress">
+                <div id="progress"></div>
+            </div>
+
+            <div id="passage" class="passage"></div>
+
+            <textarea id="typingInput"
+                placeholder="Click here and start typing..."
+                spellcheck="false"
+                autocomplete="off"></textarea>
+
+            <div class="actions">
+                <p id="message">Start typing to begin the timer.</p>
+                <button id="restart">↻ Restart</button>
+            </div>
+
+            <section id="result" class="result" hidden>
+                <h2>Test completed! 🎉</h2>
+                <p>Your typing results are ready.</p>
+                <div class="result-stats">
+                    <div>
+                        <h2 id="finalWpm">0</h2>
+                        <p>WPM</p>
+                    </div>
+                    <div>
+                        <h2 id="finalAccuracy">100%</h2>
+                        <p>ACCURACY</p>
+                    </div>
+                </div>
+                <button id="tryAgain">Try Again →</button>
+            </section>
+        </section>
+
+        <section class="tips">
+            <article>
+                <h3>⌁ Speed matters</h3>
+                <p>WPM measures how many standard words you type per minute.</p>
+            </article>
+            <article>
+                <h3>◎ Accuracy counts</h3>
+                <p>Focus on correct typing first. Speed improves with practice.</p>
+            </article>
+        </section>
+
+        <footer>
+            Made with ♥ for faster fingers.
+            <span>© 2026 TypeSprint</span>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
